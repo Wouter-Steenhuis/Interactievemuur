@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/info.css">
+    <title>Interactievemuur</title>
+</head>
+<body>
+    <p id="selectJaar"></p>
+    <button id="terugKnop">&lt; terug</button>
+    <video src="../video/Scene - Dr Charles 2.mp4" id="video1"></video>
+    <button id="replayButton" class="roundButton" onclick="replayVideo()">⟲</button>
+    <img id="kraan" src="../images/kraan.png" alt="kraan">
+    <img id="graaf" src="../images/graaf.png" alt="graaf">
+    <div id="containerContainer">
+        <div class="container">
+            <p class="titel">Oude UCP</p>
+            <div class="plaatjesContainer">
+                <img class="ucp" src="../images/ucp-ingang.jpg" alt="UCP_Ingang">
+                <img class="ucp" src="../images/ucp-binnenn.jpg" alt="UCP_Binnen">
+            </div>
+        </div>
+        <div class="container">
+            <p class="titel">Nieuwe UCP</p>
+            <div class="plaatjesContainer">
+                <img class="ucp" src="../images/UCP_Nieuw.jpeg" alt="UCP">
+                <img class="ucp" src="../images/UCP_Nieuw2.jpeg" alt="UCP_Receptie">
+            </div>
+        </div>
+    </div>
+
+    <div id="videoContainer">
+        <p class="titel">Nieuwsvideo</p>
+        <video id="video2" src="../video/UMCG bouwt de Intensive Care Volwassenen - deel 1.mp4"></video>
+    </div>
+
+        <div id="plattegrondContainer">
+            <p class="titel">Plattegrond</p>
+            <img id="plattegrond" src="../images/plattegrond.jpeg" alt="plattegrond">
+        </div>
+
+        <div id="qrContainer">
+            <p class="titel">Website</p>
+            <img id="qr" src="../images/qr.png" alt="QRcode">
+        </div>
+    </div>
+
+    <script src="../JS/info.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "DTL Caspari Black";
+  src: url("../fonts/DTL Caspari ST Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DTL Caspari Regular";
+  src: url("../fonts/DTL Caspari ST Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DTL Caspari Bold";
+  src: url("../fonts/DTL Caspari T Bold.ttf") format("truetype");
+}
+#banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #77bde2;
+}
+
+#clickableHeart {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  font-family: "DTL Caspari Black";
+}
+
+.heart {
+  color: rgb(255, 125, 0);
+  font-size: 400px;
+  transform-origin: center;
+  animation: beat 0.6s infinite alternate;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+
+.text {
+  color: white;
+  font-size: 75px;
+  position: absolute;
+  top: 35%;
+  align-items: center;
+  z-index: 2;
+  user-select: none;
+  font-family: "DTL Caspari Bold";
+}
+
+.instructie1 {
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  max-width: 300px;
+  line-height: 1.5;
+  margin-top: 0;
+  cursor: default;
+  user-select: none;
+  font-family: "DTL Caspari Regular";
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes heartAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
